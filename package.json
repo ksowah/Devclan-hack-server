@@ -1,0 +1,42 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "server": "nodemon src/index.ts",
+    "tsc": "./node_modules/typescript/bin/tsc",
+    "prebuild": "rm -rf dist && mkdir dist",
+    "build": "tsc",
+    "postinstall": "npm run tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/node": "^20.8.8",
+    "@types/nodemailer": "^6.4.14",
+    "@types/ws": "^8.5.10",
+    "dotenv": "^16.3.1",
+    "nodemon": "^3.0.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.9.4",
+    "@graphql-tools/schema": "^10.0.0",
+    "apollo-server-express": "^3.12.1",
+    "axios": "^1.6.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "graphql": "^16.8.1",
+    "graphql-subscriptions": "^2.0.0",
+    "graphql-ws": "^5.14.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.6.3",
+    "nodemailer": "^6.9.7",
+    "ws": "^8.14.2"
+  }
+}
